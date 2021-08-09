@@ -67,9 +67,11 @@ const Add = () => {
                             <TextField name='price' onChange={handleInp} value={values.price} variant='outlined' label='Price' />
                             <TextField name='description' onChange={handleInp} value={values.description} variant='outlined' label='Description' />
                         </form>
+                        {/* <Link to="add"> */}
                         <IconButton aria-label="share" onClick={handleSave}>
                             <Button variant="contained" color="secondary">Add</Button>
                         </IconButton>
+                        {/* </Link> */}
                     </div>
                 </div>
         </Paper>
