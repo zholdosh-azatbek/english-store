@@ -5,7 +5,7 @@
       "image": "https://randomuser.me/api/portraits/women/0.jpg",
       "price": "1500",
       "type": "english",
-      "description": "",
+      "description": "asdads",
       "id": 14
     },
     {
@@ -39,14 +39,6 @@
       "type": "kyrgyz",
       "description": "",
       "id": 18
-    },
-    {
-      "title": "Jesse Thomas",
-      "image": "https://randomuser.me/api/portraits/men/21.jpg",
-      "price": "1000",
-      "type": "english",
-      "description": "",
-      "id": 19
     }
   ]
 }

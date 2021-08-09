@@ -16,8 +16,8 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import { useState } from 'react';
 import { productContext } from '../../contexts/ProductsContext';
 import { Badge } from '@material-ui/core';
-
 import "./NavBar.css"
+
 const useStyles = makeStyles((theme) => ({
 
   grow: {

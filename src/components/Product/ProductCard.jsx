@@ -47,36 +47,36 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ProductCard({item, history}) {
+export default function ProductCard({ item, history }) {
   const classes = useStyles();
-  const {deleteProduct, addProductInCart, checkProductInCart} = useContext(productContext)
+  const { deleteProduct, addProductInCart, checkProductInCart } = useContext(productContext)
 
 
 
   let icons = (
     <CardActions disableSpacing>
-      <Link to={`/edit/${item.id}`} style={{color: 'black', textDecoration: 'none'}}>
+      <Link to={`/edit/${item.id}`} style={{ color: 'black', textDecoration: 'none' }}>
         <IconButton aria-label="add to favorites">
           <EditIcon />
         </IconButton>
       </Link>
       <IconButton aria-label="share" onClick={() => deleteProduct(item.id, history)}>
-          <DeleteIcon />
+        <DeleteIcon />
       </IconButton>
 
-      <IconButton 
+      <IconButton
         aria-label="share"
         onClick={() => addProductInCart(item)}
         color={checkProductInCart(item.id) ? "secondary" : "inherit"}
-        >
-          <ShoppingCartIcon />
+      >
+        <ShoppingCartIcon />
       </IconButton>
     </CardActions>
   )
 
   return (
     <Card className={classes.root}>
-      <Link to={`/detail/${item.id}`} style={{textDecoration:'none', color: 'black'}}>
+      <Link to={`/detail/${item.id}`} style={{ textDecoration: 'none', color: 'black' }}>
         <CardHeader
           title={item.title}
           subheader={item.type}

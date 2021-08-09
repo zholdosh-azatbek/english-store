@@ -10,6 +10,7 @@ import { productContext } from '../../contexts/ProductsContext';
 import Slider from '@material-ui/core/Slider';
 
 
+
 const useStyles = makeStyles(theme => ({
     paper: {
         padding: theme.spacing(2),
@@ -69,7 +70,7 @@ const Sidebar = () => {
     }
     return (
         <Grid item md={3}>
-            <Paper elevation={2} className={classes.paper}>
+            <Paper elevation={2} className={classes.paper} >
                 <FormControl component="fieldset">
                     <FormLabel component="legend">Languages</FormLabel>
                     <RadioGroup aria-label="gender" name="gender1" value={type} onChange={handleChangeType}>

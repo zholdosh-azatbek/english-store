@@ -12,24 +12,24 @@ import { Button, Typography } from '@material-ui/core';
 import { calcTotalPrice } from '../../helpers/calcPrice';
 
 const useStyles = makeStyles({
-    table: {
-      minWidth: 700,
-    },
-    paper: {
-      maxWidth: 1000,
-      margin: '40px auto'
-    }
-  });
+  table: {
+    minWidth: 700,
+  },
+  paper: {
+    maxWidth: 1000,
+    margin: '40px auto'
+  }
+});
 
 const Cart = () => {
-    const classes = useStyles()
-    const {cart, getCart, changeProductCount} = useContext(productContext)
+  const classes = useStyles()
+  const { cart, getCart, changeProductCount } = useContext(productContext)
 
-    useEffect(() => {
-        getCart()
-    }, [])
-    return (
-        <TableContainer component={Paper} className={classes.paper}>
+  useEffect(() => {
+    getCart()
+  }, [])
+  return (
+    <TableContainer component={Paper} className={classes.paper}>
       <Table className={classes.table} aria-label="spanning table">
         <TableHead>
           <TableRow>
@@ -41,44 +41,44 @@ const Cart = () => {
           </TableRow>
         </TableHead>
         <TableBody>
-            {cart.products ? (
-                <>
-                    {cart.products.map((elem) => (
-                    <TableRow key={elem.item.id}>
-                        <TableCell><img style={{width: "50px"}} src={elem.item.images} alt={elem.item.title}/></TableCell>
-                        <TableCell align="right">{elem.item.title}</TableCell>
-                        <TableCell align="right">{elem.item.price}</TableCell>
-                        <TableCell align="right">
-                        <input 
-                            type="number" 
-                            value={elem.count} 
-                            onChange={(e) => changeProductCount(e.target.value, elem.item.id)}
-                        />
-                        </TableCell>
-                        <TableCell align="right">{elem.subPrice}</TableCell>
-                    </TableRow>
-                    ))}
-                </>
-            ) : (<h1>Loading...</h1> )}
+          {cart.products ? (
+            <>
+              {cart.products.map((elem) => (
+                <TableRow key={elem.item.id}>
+                  <TableCell><img style={{ width: "50px" }} src={elem.item.images} alt={elem.item.title} /></TableCell>
+                  <TableCell align="right">{elem.item.title}</TableCell>
+                  <TableCell align="right">{elem.item.price}</TableCell>
+                  <TableCell align="right">
+                    <input
+                      type="number"
+                      value={elem.count}
+                      onChange={(e) => changeProductCount(e.target.value, elem.item.id)}
+                    />
+                  </TableCell>
+                  <TableCell align="right">{elem.subPrice}</TableCell>
+                </TableRow>
+              ))}
+            </>
+          ) : (<h1>Loading...</h1>)}
 
           <TableRow>
             <TableCell rowSpan={3} />
             <TableCell colSpan={2}><Typography variant="h5">Total:</Typography></TableCell>
             {
-                cart.products  ? (
-                    <TableCell align="right"><Typography variant="h5">{calcTotalPrice(cart.products)}</Typography></TableCell>
-                ) : (null)
+              cart.products ? (
+                <TableCell align="right"><Typography variant="h5">{calcTotalPrice(cart.products)}</Typography></TableCell>
+              ) : (null)
             }
           </TableRow>
           <TableRow >
-          <TableCell colSpan={3} align="right">
+            <TableCell colSpan={3} align="right">
               <Button variant="contained" color="primary">BUY</Button>
-          </TableCell>
+            </TableCell>
           </TableRow>
         </TableBody>
       </Table>
     </TableContainer>
-    );
+  );
 };
 
 export default Cart;
