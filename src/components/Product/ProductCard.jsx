@@ -20,21 +20,22 @@ import EditIcon from '@material-ui/icons/Edit';
 import DeleteIcon from '@material-ui/icons/Delete';
 import { productContext } from '../../contexts/ProductsContext';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
-import { Grid } from '@material-ui/core';
+
 
 
 
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    display: Grid,
-    maxWidth: 200,
+    // display:"flex",
+
+    maxWidth: 400,
     minWidth: 50,
     borderRadius: "10%",
 
   },
   media: {
-    height: 30,
+    height: 20,
     paddingTop: '56.25%', // 16:9
   },
   expand: {
