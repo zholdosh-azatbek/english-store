@@ -156,7 +156,7 @@ export default function Navbar() {
       onClose={handleMobileMenuClose}
     >
       <MenuItem onClick={handleProfileMenuOpen}>
-        <IconButton
+        <Link to="/admin"><IconButton
           aria-label="account of current user"
           aria-controls="primary-search-account-menu"
           aria-haspopup="true"
@@ -164,7 +164,8 @@ export default function Navbar() {
         >
           <AccountCircle />
         </IconButton>
-        <p>Profile</p>
+        </Link>
+        <p>Admin</p>
       </MenuItem>
     </Menu>
   );
@@ -173,17 +174,23 @@ export default function Navbar() {
     <div className={classes.grow}>
       <AppBar className="navbar" position="static">
         <Toolbar>
+        
           <IconButton
             edge="start"
             className={classes.menuButton}
             color="inh"
             aria-label="open drawer"
           >
+            
             <MenuIcon />
           </IconButton>
+          <Link to="/?_limit=6">
+            <button>
           <Typography className={classes.title} variant="h6" noWrap>
             Beautuful Language
           </Typography>
+          </button>
+          </Link>
           <div className={classes.search}>
             <div className={classes.searchIcon}>
               <SearchIcon />
@@ -206,6 +213,10 @@ export default function Navbar() {
               </Badge>
             </IconButton>
           </Link>
+          <Link to="/add">
+      <button>Добавить
+      </button>
+      </Link>
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
             <IconButton

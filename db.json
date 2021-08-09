@@ -41,12 +41,28 @@
       "id": 18
     },
     {
-      "title": "Jesse Thomas",
-      "image": "https://randomuser.me/api/portraits/men/21.jpg",
-      "price": "1000",
-      "type": "english",
+      "title": "",
+      "image": "https://content.onliner.by/news/1100x5616/472baa6904f365c4bae96d6b77c13010.jpeg",
+      "price": "",
+      "type": "lkhlk.h",
       "description": "",
       "id": 19
+    },
+    {
+      "title": "",
+      "image": "https://content.onliner.by/news/1100x5616/472baa6904f365c4bae96d6b77c13010.jpeg",
+      "price": "",
+      "type": "",
+      "description": "",
+      "id": 20
+    },
+    {
+      "title": "",
+      "image": "https://content.onliner.by/news/1100x5616/472baa6904f365c4bae96d6b77c13010.jpeg",
+      "price": "",
+      "type": "",
+      "description": "",
+      "id": 21
     }
   ]
 }
