@@ -33,16 +33,6 @@
       "id": 17
     },
     {
-      "title": "Hi, My name is  Gertrude Adams",
-      "image": "https://randomuser.me/api/portraits/women/85.jpg",
-      "price": "5000",
-      "type": "kyrgyz",
-      "description": "",
-      "id": 18
-<<<<<<< HEAD
-=======
-    },
-    {
       "title": "",
       "image": "https://content.onliner.by/news/1100x5616/472baa6904f365c4bae96d6b77c13010.jpeg",
       "price": "",
@@ -65,7 +55,6 @@
       "type": "",
       "description": "",
       "id": 21
->>>>>>> 47d09a5524cddaf54b719167c2e6ac59da110ff4
     }
   ]
 }
