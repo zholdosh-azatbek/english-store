@@ -63,6 +63,14 @@
       "type": "english",
       "description": "Добейтесь успехов в изучении русского языка с опытным преподавателем-носителем языка",
       "id": 25
+    },
+    {
+      "title": "",
+      "image": "https://content.onliner.by/news/1100x5616/472baa6904f365c4bae96d6b77c13010.jpeg",
+      "price": "3000",
+      "type": "English",
+      "description": "",
+      "id": 26
     }
   ]
 }

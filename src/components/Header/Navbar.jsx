@@ -139,8 +139,8 @@ export default function Navbar() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-      <MenuItem onClick={handleMenuClose}>My account</MenuItem>
+     <Link to="/login" className="signIn-btn_1"><MenuItem onClick={handleMenuClose}>sign in</MenuItem></Link>
+     <Link to="/register" className="signUp-btn_2"><MenuItem onClick={handleMenuClose}>sign up</MenuItem></Link>
     </Menu>
   );
 
@@ -199,7 +199,7 @@ export default function Navbar() {
               placeholder="Search…"
               classes={{
                 root: classes.inputRoot,
-                input: classes.inputInput,
+                input: classes.inputInput,  
               }}
               inputProps={{ 'aria-label': 'search' }}
               value={searchVal}
