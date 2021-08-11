@@ -16,8 +16,8 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import { useState } from 'react';
 import { productContext } from '../../contexts/ProductsContext';
 import { Badge } from '@material-ui/core';
-
 import "./NavBar.css"
+
 const useStyles = makeStyles((theme) => ({
 
   grow: {
@@ -174,22 +174,22 @@ export default function Navbar() {
     <div className={classes.grow}>
       <AppBar className="navbar" position="static">
         <Toolbar>
-        
+
           <IconButton
             edge="start"
             className={classes.menuButton}
             color="inh"
             aria-label="open drawer"
           >
-            
+
             <MenuIcon />
           </IconButton>
-          <Link to="/?_limit=6">
-            <button>
-          <Typography className={classes.title} variant="h6" noWrap>
-            Beautuful Language
-          </Typography>
-          </button>
+          <Link className="logo_btn" to="/?_limit=6">
+            <h6>
+              <Typography className={classes.title} variant="h6" noWrap>
+                Beautuful Language
+              </Typography>
+            </h6>
           </Link>
           <div className={classes.search}>
             <div className={classes.searchIcon}>
@@ -206,17 +206,17 @@ export default function Navbar() {
               onChange={handleValue}
             />
           </div>
-          <Link to="/cart" style={{ color: "white" }} >
-            <IconButton color="inherit">
+          <Link to="/cart" style={{ color: "black" }} >
+            <IconButton color="black">
               <Badge badgeContent={cartLength} color="secondary">
                 <ShoppingCartIcon />
               </Badge>
             </IconButton>
           </Link>
           <Link to="/add">
-      <button>Добавить
-      </button>
-      </Link>
+            <button className="add_btn">Добавить
+            </button>
+          </Link>
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
             <IconButton
@@ -245,6 +245,6 @@ export default function Navbar() {
       </AppBar>
       {renderMobileMenu}
       {renderMenu}
-    </div>
+    </div >
   );
 }

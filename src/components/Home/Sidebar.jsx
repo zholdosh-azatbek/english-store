@@ -8,6 +8,8 @@ import { Grid, Paper, makeStyles, Button } from '@material-ui/core';
 import { useHistory } from 'react-router-dom';
 import { productContext } from '../../contexts/ProductsContext';
 import Slider from '@material-ui/core/Slider';
+import { red } from '@material-ui/core/colors';
+
 
 
 const useStyles = makeStyles(theme => ({
@@ -17,7 +19,7 @@ const useStyles = makeStyles(theme => ({
         marginRight: '20px',
         marginBottom: '20px',
         minWidth: '170px',  //TODO0 NEW (from 19.05.2021)
-        maxWidth: '350px'  //TODO0 NEW (from 19.05.2021)
+        maxWidth: '350px',  //TODO0 NEW (from 19.05.2021)
     }
 }))
 
@@ -69,7 +71,7 @@ const Sidebar = () => {
     }
     return (
         <Grid item md={3}>
-            <Paper elevation={2} className={classes.paper}>
+            <Paper elevation={2} className={classes.paper} >
                 <FormControl component="fieldset">
                     <FormLabel component="legend">Languages</FormLabel>
                     <RadioGroup aria-label="gender" name="gender1" value={type} onChange={handleChangeType}>

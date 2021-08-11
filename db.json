@@ -1,68 +1,68 @@
 {
   "products": [
     {
-      "title": "Hi, My name is  Felicia Rice",
-      "image": "https://randomuser.me/api/portraits/women/0.jpg",
-      "price": "1500",
-      "type": "english",
-      "description": "",
-      "id": 14
-    },
-    {
-      "title": "Hi, My name is  Brennan Howell",
-      "image": "https://randomuser.me/api/portraits/men/46.jpg",
+      "title": "Привет! Я Андреей ",
+      "image": "https://d21xzygesx9h0w.cloudfront.net/TUTOROO-Russian-Tutor-Sydney-Dimitry-Bergan-172684.jpg",
       "price": "2000",
       "type": "russian",
-      "description": "",
+      "description": "Добейтесь успехов в изучении русского языка с опытным преподавателем-носителем языка.",
       "id": 15
     },
     {
-      "title": "Hi, My name is  Dolores Berry",
-      "image": "https://randomuser.me/api/portraits/women/80.jpg",
+      "title": "Салам ! Мен Айима",
+      "image": "https://auca.kg/uploads/CEC/Alisa.jpg",
       "price": "3000",
       "type": "kyrgyz",
-      "description": "",
+      "description": "Добейтесь успехов в изучении русского языка с опытным преподавателем-носителем языка.",
       "id": 16
     },
     {
       "title": "Hi, My name is  Rick Taylor",
-      "image": "https://randomuser.me/api/portraits/men/4.jpg",
+      "image": "https://3kyfma1tr3gd273qz5237tyv-wpengine.netdna-ssl.com/wp-content/uploads/2017/09/TEACHING-ENGLISH-AS-FOREGIN-LANGUAGE-TEFL.jpg",
       "price": "2000",
       "type": "english",
-      "description": "",
+      "description": "I am a native teacher from Birmingham, England, with 9 years of teaching experience, since graduation. Fully TEFL/CELTA/TESOL",
       "id": 17
     },
     {
-      "title": "Hi, My name is  Gertrude Adams",
-      "image": "https://randomuser.me/api/portraits/women/85.jpg",
+      "title": "Салам ! Мен Айима",
+      "image": "https://motto-jp.com/media/wp-content/uploads/2021/04/AdobeStock_74877484.jpeg",
       "price": "5000",
       "type": "kyrgyz",
-      "description": "",
+      "description": "I am a native teacher from Birmingham, England, with 9 years of teaching experience, since graduation. Fully TEFL/CELTA/TESOL",
       "id": 18
     },
     {
-      "title": "",
-      "image": "https://content.onliner.by/news/1100x5616/472baa6904f365c4bae96d6b77c13010.jpeg",
-      "price": "",
-      "type": "lkhlk.h",
-      "description": "",
-      "id": 19
+      "title": "Привет! Я Мария",
+      "image": "https://ru.baku.ws/uploads/posts/2015-09/1442214203_11.jpg",
+      "price": "3000",
+      "type": "russian",
+      "description": "Добейтесь успехов в изучении русского языка с опытным преподавателем-носителем языка «Мне нужно выучить русский!!!",
+      "id": 22
     },
     {
-      "title": "",
-      "image": "https://content.onliner.by/news/1100x5616/472baa6904f365c4bae96d6b77c13010.jpeg",
-      "price": "",
-      "type": "",
-      "description": "",
-      "id": 20
+      "title": "Привет! Я Мария",
+      "image": "https://d21xzygesx9h0w.cloudfront.net/TUTOROO-connects-you-with-Olia,-Russian-tutor-in-Singapore-5ff41bdc48ddc.jpg",
+      "price": "5000",
+      "type": "russian",
+      "description": "Добейтесь успехов в изучении русского языка с опытным преподавателем-носителем языка «Мне нужно выучить русский!!!",
+      "id": 23
     },
     {
-      "title": "",
-      "image": "https://content.onliner.by/news/1100x5616/472baa6904f365c4bae96d6b77c13010.jpeg",
-      "price": "",
-      "type": "",
-      "description": "",
-      "id": 21
+      "title": "Салам ! Мен Айба",
+      "image": "https://st.depositphotos.com/1518767/3618/i/600/depositphotos_36184557-stock-photo-teacher-with-tablet-pc-in.jpg",
+      "price": "5000",
+      "type": "kyrgyz",
+      "description": "Добейтесь успехов в изучении русского языка с опытным преподавателем-носителем языка",
+      "id": 24
+    },
+    {
+      "title": "Hi! I'm Tom Kesenjer",
+      "image": "https://lh3.googleusercontent.com/proxy/JSNS8SBPtCTvXmmI4NE0eM0p_kyyCad2WqcVvVrBJi8DbiEXBRIeW-M5fh6cYVO4wdw6kKOnzPRsWiOxf4PrsYMb4jZNFIGQseX91Bzl5-S456UKYSXzv38mXIg7pV-K",
+      "price": "4000",
+      "type": "english",
+      "description": "Добейтесь успехов в изучении русского языка с опытным преподавателем-носителем языка",
+      "id": 25
     }
   ]
 }

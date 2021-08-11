@@ -20,21 +20,23 @@ import EditIcon from '@material-ui/icons/Edit';
 import DeleteIcon from '@material-ui/icons/Delete';
 import { productContext } from '../../contexts/ProductsContext';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
-import { Grid } from '@material-ui/core';
+
 
 
 
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    display: Grid,
-    maxWidth: 200,
+    // display:"flex",
+
+    maxWidth: 400,
     minWidth: 50,
     borderRadius: "10%",
+    marginBottom: "10px",
 
   },
   media: {
-    height: 30,
+    height: 20,
     paddingTop: '56.25%', // 16:9
   },
   expand: {
@@ -52,36 +54,36 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ProductCard({item, history}) {
+export default function ProductCard({ item, history }) {
   const classes = useStyles();
-  const {deleteProduct, addProductInCart, checkProductInCart} = useContext(productContext)
+  const { deleteProduct, addProductInCart, checkProductInCart } = useContext(productContext)
 
 
 
   let icons = (
     <CardActions disableSpacing>
-      <Link to={`/edit/${item.id}`} style={{color: 'black', textDecoration: 'none'}}>
+      <Link to={`/edit/${item.id}`} style={{ color: 'black', textDecoration: 'none' }}>
         <IconButton aria-label="add to favorites">
           <EditIcon />
         </IconButton>
       </Link>
       <IconButton aria-label="share" onClick={() => deleteProduct(item.id, history)}>
-          <DeleteIcon />
+        <DeleteIcon />
       </IconButton>
 
-      <IconButton 
+      <IconButton
         aria-label="share"
         onClick={() => addProductInCart(item)}
         color={checkProductInCart(item.id) ? "secondary" : "inherit"}
-        >
-          <ShoppingCartIcon />
+      >
+        <ShoppingCartIcon />
       </IconButton>
     </CardActions>
   )
 
   return (
     <Card className={classes.root}>
-      <Link to={`/detail/${item.id}`} style={{textDecoration:'none', color: 'black'}}>
+      <Link to={`/detail/${item.id}`} style={{ textDecoration: 'none', color: 'black' }}>
         <CardHeader
           title={item.title}
           subheader={item.type}
