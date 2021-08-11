@@ -1,4 +1,14 @@
 .navbar {
     background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMkp1IE4pC1MnXhxFGw5vnroB8P5KE2nOvoqFEaiLSrkYQCg_CbG7ICNCLHJztQ7A2-mM&usqp=CAU);
-    opacity: 0.7;
+}
+
+.add_btn {
+    border: none;
+    border-radius: 2px;
+    background-color: black;
+    color: blanchedalmond;
+}
+.logo_btn {
+    color: black;
+    text-decoration: none !important;
 }

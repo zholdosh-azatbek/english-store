@@ -7,7 +7,7 @@ import image3 from './../assets/images/3.jpeg';
 
 const CarouselContainer = () => {
   return (
-    <Carousel fade={true} pause={false}>
+    <Carousel style={{ marginBottom: "10px" }} fade={true} pause={false}>
       <Carousel.Item interval={5000}>
         <img
           className="d-block w-100"
@@ -15,8 +15,9 @@ const CarouselContainer = () => {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h1>Забронируйте курс английского языка до 1 сентябпя 2021 года и получите СКИДКУ:</h1>
+          <p>Курс до 8 недель – СКИДКА 30%
+            Курс от 8 недель – CКИДКА 15%</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={5000}>
@@ -26,8 +27,9 @@ const CarouselContainer = () => {
           alt="Third slide"
         />
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h1>Забронируйте курс английского языка до 1 сентябпя 2021 года и получите СКИДКУ:</h1>
+          <p>Курс до 8 недель – СКИДКА 30%
+            Курс от 8 недель – CКИДКА 15%</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={5000}>
@@ -37,8 +39,9 @@ const CarouselContainer = () => {
           alt="Third slide"
         />
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          <h1>Забронируйте курс английского языка до 1 сентябпя 2021 года и получите СКИДКУ:</h1>
+          <p>Курс до 8 недель – СКИДКА 30%
+            Курс от 8 недель – CКИДКА 15%</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
