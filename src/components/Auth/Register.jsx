@@ -63,7 +63,7 @@ export default function Register() {
         <Typography component="h1" variant="h5">
           Sign up
         </Typography>
-        <form onSubmit={(e) => registerUser(e, history)} className={classes.form} noValidate>
+        <form className={classes.form} noValidate>
           <Grid container spacing={2}>
             <Grid item xs={12} sm={6}>
               <TextField
@@ -118,6 +118,7 @@ export default function Register() {
               />
             </Grid>
           </Grid>
+          <Link  to="/login">
           <Button
             type="submit"
             fullWidth
@@ -127,6 +128,7 @@ export default function Register() {
           >
             Sign Up
           </Button>
+          </Link>
           <Grid container justifyContent="flex-end">
             <Grid item>
               <Link to="/login" variant="body2">

@@ -40,7 +40,7 @@ const Add = () => {
     }
 
     const handleSave = () => {
-        if(!values.image) values.image = "https://content.onliner.by/news/1100x5616/472baa6904f365c4bae96d6b77c13010.jpeg"
+        if(!values.image) values.image = "https://wecommdigital.com/wp-content/uploads/2020/04/Why-impactful-banding-is-necessary-in-education-sector-WD.jpg"
         addProduct(values)
         history.push('/')
     }
@@ -49,7 +49,7 @@ const Add = () => {
             <h1 style={{textAlign: 'center'}}>Add product</h1>
                 <div style={{display: 'flex', justifyContent: 'space-around', color: 'black'}}>
                     <div>
-                        <img style={{width: '400px'}} src={values.image ? values.image : "https://content.onliner.by/news/1100x5616/472baa6904f365c4bae96d6b77c13010.jpeg"} alt="smartphone image"/>
+                        <img style={{width: '400px'}} src={values.image ? values.image : "https://wecommdigital.com/wp-content/uploads/2020/04/Why-impactful-banding-is-necessary-in-education-sector-WD.jpg"} alt=" image"/>
                     </div>
 
                     <div 

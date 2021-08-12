@@ -76,7 +76,7 @@ export default function Login() {
           <Typography component="h1" variant="h5">
             Sign in
           </Typography>
-          <form onSubmit={(e) => loginUser(e, history)} className={classes.form} noValidate>
+          <form className={classes.form} noValidate>
             <TextField
               variant="outlined"
               margin="normal"
@@ -103,7 +103,8 @@ export default function Login() {
               control={<Checkbox value="remember" color="primary" />}
               label="Remember me"
             />
-            <Button
+             <Link to='/'>
+             <Button
               type="submit"
               fullWidth
               variant="contained"
@@ -112,6 +113,7 @@ export default function Login() {
             >
               Sign In
             </Button>
+             </Link>
             <Grid container>
               <Grid item xs>
                 {/* <Link href="#" variant="body2">

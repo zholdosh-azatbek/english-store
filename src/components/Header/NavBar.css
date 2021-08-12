@@ -9,4 +9,17 @@
 .signUp-btn_2 {
     text-decoration: none; 
     color: black; 
+
+}
+
+.add_btn {
+    border: none;
+    border-radius: 2px;
+    background-color: black;
+    color: blanchedalmond;
+}
+.logo_btn {
+    color: black;
+    text-decoration: none !important;
+
 }

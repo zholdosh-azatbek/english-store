@@ -1,4 +1,5 @@
 import './App.css';
+// import CarouselContainer from './components/Home/CarouselContainer';
 import Footer from './components/Home/Footer';
 import Routes from './Routes';
 
@@ -7,7 +8,9 @@ function App() {
     <div className="page-container">
       <div className="content-wrap">
 
+
         <Routes />
+        {/* <CarouselContainer /> */}
       </div>
       <Footer />
     </div>

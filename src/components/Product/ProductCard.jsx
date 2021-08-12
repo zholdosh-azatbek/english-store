@@ -28,11 +28,14 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 const useStyles = makeStyles((theme) => ({
   root: {
     // display:"flex",
+
     marginBottom: "15px",
+
 
     maxWidth: 400,
     minWidth: 50,
     borderRadius: "10%",
+    marginBottom: "10px",
 
   },
   media: {
